@@ -4,7 +4,7 @@
     "description": "A Slither.io clone using HTML5, TypeScript, and Node.js with WebSockets",
     "main": "server.js",
     "scripts": {
-      "build": "npx --no-install tsc && npm run copy-static",
+      "build": "node_modules/.bin/tsc && npm run copy-static",
       "copy-static": "copyfiles -u 1 public/index.html build",
       "start": "node server.js"
     },
