@@ -6,7 +6,7 @@
     "scripts": {
         "prebuild": "npm install",
         "build": "node_modules/.bin/tsc && npm run copy-static",
-        "copy-static": "copyfiles -u 1 public/index.html build",
+        "copy-static": "mkdir -p build && copyfiles -u 1 public/index.html build",
         "start": "node server.js",
         "vercel-build": "npm run build"
     },
