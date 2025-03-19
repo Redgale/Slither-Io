@@ -1,0 +1,19 @@
+{
+    "name": "slither-clone",
+    "version": "1.0.0",
+    "description": "A Slither.io clone using HTML5, TypeScript, and Node.js with WebSockets",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "build": "tsc"
+    },
+    "dependencies": {
+      "ws": "^8.13.0"
+    },
+    "devDependencies": {
+      "typescript": "^5.0.0"
+    },
+    "author": "",
+    "license": "MIT"
+  }
+  
