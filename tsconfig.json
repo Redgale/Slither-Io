@@ -1,14 +1,18 @@
 {
     "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "outDir": "./public",
+      "target": "ES6",
+      "module": "ES6",
       "strict": true,
       "esModuleInterop": true,
-      "sourceMap": true
+      "sourceMap": true,
+      "rootDir": "./public",
+      "outDir": "./build"
     },
     "include": [
       "public/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules"
     ]
   }
   

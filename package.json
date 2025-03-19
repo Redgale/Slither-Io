@@ -4,14 +4,16 @@
     "description": "A Slither.io clone using HTML5, TypeScript, and Node.js with WebSockets",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js",
-      "build": "tsc"
+      "build": "tsc && npm run copy-static",
+      "copy-static": "copyfiles -u 1 public/index.html build",
+      "start": "node server.js"
     },
     "dependencies": {
       "ws": "^8.13.0"
     },
     "devDependencies": {
-      "typescript": "^5.0.0"
+      "typescript": "^4.9.5",
+      "copyfiles": "^2.4.1"
     },
     "author": "",
     "license": "MIT"
